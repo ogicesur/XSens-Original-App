@@ -1,0 +1,408 @@
+<resources>
+
+    <string name="app_name">Xsens DOT Example</string>
+
+    <string name="hint_turn_on_bluetooth">Please turn on the Bluetooth adapter.</string>
+    <string name="hint_allow_location">Please allow location permission to use sensor(s).</string>
+    <string name="hint_connecting">Please wait for the connection result...</string>
+    <string name="hint_syncing_failed">Put sensors as close as possible and try again.</string>
+    <string name="hint_check_connection">Some sensors are disconnected. Please check the connection.</string>
+
+    <string name="menu_start_scan">Scan</string>
+    <string name="menu_stop_scan">Stop Scanning</string>
+    <string name="menu_start_streaming">Start</string>
+    <string name="menu_stop_streaming">Stop</string>
+    <string name="menu_measure">Measure</string>
+
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="reconnecting">Reconnecting</string>
+    <string name="batt_state_charging">Charging</string>
+    <string name="syncing">Syncing</string>
+    <string name="mode">Mode:</string>
+    <string name="sync_status">Sync status:</string>
+    <string name="sync_result_success">Success</string>
+    <string name="sync_result_fail">Fail</string>
+    <string name="mode_complete_euler">Complete (Euler)</string>
+    <string name="name">Name:</string>
+    <string name="orientation">Orientation (deg):</string>
+    <string name="free_acc">Free Acceleration (m/s2):</string>
+    <string name="environment">Environment</string>
+    <string name="textview">textview</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="device_connected">device_connected</string>
+    <string name="participant_id">Participant ID</string>
+    <string name="task_order">Task Order</string>
+
+    <string-array name="participants">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+        <item>"16"</item>
+        <item>"17"</item>
+        <item>"18"</item>
+    </string-array>
+
+    <string-array name="Participant_1">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"I"</item>
+        <item>"C"</item>
+        <item>"H"</item>
+        <item>"D"</item>
+        <item>"G"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+    </string-array>
+
+    <string-array name="Participant_2">
+        <item>"G"</item>
+        <item>"F"</item>
+        <item>"H"</item>
+        <item>"E"</item>
+        <item>"I"</item>
+        <item>"D"</item>
+        <item>"A"</item>
+        <item>"C"</item>
+        <item>"B"</item>
+    </string-array>
+
+    <string-array name="Participant_3">
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"B"</item>
+        <item>"E"</item>
+        <item>"A"</item>
+        <item>"F"</item>
+        <item>"I"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+    </string-array>
+
+    <string-array name="Participant_4">
+        <item>"I"</item>
+        <item>"H"</item>
+        <item>"A"</item>
+        <item>"G"</item>
+        <item>"B"</item>
+        <item>"F"</item>
+        <item>"C"</item>
+        <item>"E"</item>
+        <item>"D"</item>
+    </string-array>
+
+    <string-array name="Participant_5">
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"D"</item>
+        <item>"G"</item>
+        <item>"C"</item>
+        <item>"H"</item>
+        <item>"B"</item>
+        <item>"I"</item>
+        <item>"A"</item>
+    </string-array>
+
+    <string-array name="Participant_6">
+        <item>"B"</item>
+        <item>"A"</item>
+        <item>"C"</item>
+        <item>"I"</item>
+        <item>"D"</item>
+        <item>"H"</item>
+        <item>"E"</item>
+        <item>"G"</item>
+        <item>"F"</item>
+    </string-array>
+
+    <string-array name="Participant_7">
+        <item>"G"</item>
+        <item>"H"</item>
+        <item>"F"</item>
+        <item>"I"</item>
+        <item>"E"</item>
+        <item>"A"</item>
+        <item>"D"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+    </string-array>
+
+    <string-array name="Participant_8">
+        <item>"D"</item>
+        <item>"C"</item>
+        <item>"E"</item>
+        <item>"B"</item>
+        <item>"F"</item>
+        <item>"A"</item>
+        <item>"G"</item>
+        <item>"I"</item>
+        <item>"H"</item>
+    </string-array>
+
+    <string-array name="Participant_9">
+        <item>"I"</item>
+        <item>"A"</item>
+        <item>"H"</item>
+        <item>"B"</item>
+        <item>"G"</item>
+        <item>"C"</item>
+        <item>"F"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+    </string-array>
+
+    <string-array name="Participant_10">
+        <item>"F"</item>
+        <item>"E"</item>
+        <item>"G"</item>
+        <item>"D"</item>
+        <item>"H"</item>
+        <item>"C"</item>
+        <item>"I"</item>
+        <item>"B"</item>
+        <item>"A"</item>
+    </string-array>
+
+    <string-array name="Participant_11">
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"A"</item>
+        <item>"D"</item>
+        <item>"I"</item>
+        <item>"E"</item>
+        <item>"H"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+    </string-array>
+
+    <string-array name="Participant_12">
+        <item>"H"</item>
+        <item>"G"</item>
+        <item>"I"</item>
+        <item>"F"</item>
+        <item>"A"</item>
+        <item>"E"</item>
+        <item>"B"</item>
+        <item>"D"</item>
+        <item>"C"</item>
+    </string-array>
+
+    <string-array name="Participant_13">
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"C"</item>
+        <item>"F"</item>
+        <item>"B"</item>
+        <item>"G"</item>
+        <item>"A"</item>
+        <item>"H"</item>
+        <item>"I"</item>
+    </string-array>
+
+    <string-array name="Participant_14">
+        <item>"A"</item>
+        <item>"I"</item>
+        <item>"B"</item>
+        <item>"H"</item>
+        <item>"C"</item>
+        <item>"G"</item>
+        <item>"D"</item>
+        <item>"F"</item>
+        <item>"E"</item>
+    </string-array>
+
+    <string-array name="Participant_15">
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"E"</item>
+        <item>"H"</item>
+        <item>"D"</item>
+        <item>"I"</item>
+        <item>"C"</item>
+        <item>"A"</item>
+        <item>"B"</item>
+    </string-array>
+
+    <string-array name="Participant_16">
+        <item>"C"</item>
+        <item>"B"</item>
+        <item>"D"</item>
+        <item>"A"</item>
+        <item>"E"</item>
+        <item>"I"</item>
+        <item>"F"</item>
+        <item>"H"</item>
+        <item>"G"</item>
+    </string-array>
+
+    <string-array name="Participant_17">
+        <item>"H"</item>
+        <item>"I"</item>
+        <item>"G"</item>
+        <item>"A"</item>
+        <item>"F"</item>
+        <item>"B"</item>
+        <item>"E"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+    </string-array>
+
+    <string-array name="Participant_18">
+        <item>"E"</item>
+        <item>"D"</item>
+        <item>"F"</item>
+        <item>"C"</item>
+        <item>"G"</item>
+        <item>"B"</item>
+        <item>"H"</item>
+        <item>"A"</item>
+        <item>"I"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_1">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"10"</item>
+        <item>"3"</item>
+        <item>"9"</item>
+        <item>"4"</item>
+        <item>"8"</item>
+        <item>"5"</item>
+        <item>"7"</item>
+        <item>"6"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_2">
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"1"</item>
+        <item>"4"</item>
+        <item>"10"</item>
+        <item>"5"</item>
+        <item>"9"</item>
+        <item>"6"</item>
+        <item>"8"</item>
+        <item>"7"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_3">
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"2"</item>
+        <item>"5"</item>
+        <item>"1"</item>
+        <item>"6"</item>
+        <item>"10"</item>
+        <item>"7"</item>
+        <item>"9"</item>
+        <item>"8"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_4">
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"3"</item>
+        <item>"6"</item>
+        <item>"2"</item>
+        <item>"7"</item>
+        <item>"10"</item>
+        <item>"8"</item>
+        <item>"10"</item>
+        <item>"9"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_5">
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"4"</item>
+        <item>"7"</item>
+        <item>"3"</item>
+        <item>"8"</item>
+        <item>"2"</item>
+        <item>"9"</item>
+        <item>"1"</item>
+        <item>"10"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_6">
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"5"</item>
+        <item>"8"</item>
+        <item>"4"</item>
+        <item>"9"</item>
+        <item>"3"</item>
+        <item>"10"</item>
+        <item>"2"</item>
+        <item>"1"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_7">
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"6"</item>
+        <item>"9"</item>
+        <item>"5"</item>
+        <item>"10"</item>
+        <item>"4"</item>
+        <item>"1"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_8">
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"7"</item>
+        <item>"10"</item>
+        <item>"6"</item>
+        <item>"1"</item>
+        <item>"5"</item>
+        <item>"2"</item>
+        <item>"4"</item>
+        <item>"3"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_9">
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"8"</item>
+        <item>"1"</item>
+        <item>"7"</item>
+        <item>"2"</item>
+        <item>"6"</item>
+        <item>"3"</item>
+        <item>"5"</item>
+        <item>"4"</item>
+    </string-array>
+
+    <string-array name="Task_Combination_10">
+        <item>"10"</item>
+        <item>"1"</item>
+        <item>"9"</item>
+        <item>"2"</item>
+        <item>"8"</item>
+        <item>"3"</item>
+        <item>"7"</item>
+        <item>"4"</item>
+        <item>"6"</item>
+        <item>"5"</item>
+    </string-array>
+
+</resources>
